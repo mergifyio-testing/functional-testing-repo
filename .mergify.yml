@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    review:
+      message: Thank you {{hello}}
+    type: REQUEST_CHANGES
+  conditions:
+  - base=20200428164439/test_review_template_attribute_error/master
+  - '#approved-reviews-by>=1'
+  name: review
