@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    review:
+      message: WTF {{author}}?
+      type: REQUEST_CHANGES
+  conditions:
+  - base=20200428164630/test_review_template/master
+  - '#approved-reviews-by>=1'
+  name: requested
