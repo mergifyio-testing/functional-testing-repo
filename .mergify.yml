@@ -1,0 +1,15 @@
+pull_request_rules:
+- actions:
+    review:
+      type: APPROVE
+  conditions:
+  - base=20200505155149/test_review_template_attribute_error/master
+  name: approve
+- actions:
+    review:
+      message: Thank you {{hello}}
+      type: REQUEST_CHANGES
+  conditions:
+  - base=20200505155149/test_review_template_attribute_error/master
+  - '#approved-reviews-by>=1'
+  name: review
