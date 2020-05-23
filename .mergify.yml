@@ -1,0 +1,12 @@
+pull_request_rules:
+- actions:
+    merge:
+      strict: smart
+      strict_smart_behavior: always-append
+      strict_smart_priority_labels:
+      - urgent
+      - medium
+  conditions:
+  - base=20200523220219/test_merge_priority/master
+  - label=ready
+  name: Merge on master
