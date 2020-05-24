@@ -1,0 +1,24 @@
+pull_request_rules:
+- actions:
+    merge:
+      priority: high
+      strict: smart-ordered
+  conditions:
+  - base=20200524194733/test_merge_priority/master
+  - label=high
+  name: Merge priority high
+- actions:
+    merge:
+      strict: smart-ordered
+  conditions:
+  - base=20200524194733/test_merge_priority/master
+  - label=default
+  name: Merge priority default
+- actions:
+    merge:
+      priority: 0
+      strict: smart-ordered
+  conditions:
+  - base=20200524194733/test_merge_priority/master
+  - label=low
+  name: Merge priority low
