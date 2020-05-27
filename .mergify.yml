@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: '@mergifyio backport 20200527162415/test_command_backport_delete_branch/stable/#3.1
+        20200527162415/test_command_backport_delete_branch/feature/one'
+    delete_head_branch: {}
+  conditions:
+  - base=20200527162415/test_command_backport_delete_branch/master
+  name: auto-backport
