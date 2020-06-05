@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    request_reviews:
+      users:
+      - mergify-test1
+      - mergify-test2
+  conditions:
+  - base=20200605151336/test_request_reviews_already_max/master
+  name: request_reviews
