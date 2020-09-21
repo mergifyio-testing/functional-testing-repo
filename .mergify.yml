@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: WTF?
+  conditions:
+  - base=20200921212114/test_debugger/master
+  name: comment
