@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    merge:
+      merge_bot_account: mergify-test1
+  conditions:
+  - base=20201012203413/test_merge_with_oauth_token/master
+  name: merge on master
