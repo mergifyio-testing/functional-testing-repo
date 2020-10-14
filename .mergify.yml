@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    merge:
+      strict: smart+ordered
+  conditions:
+  - base=20201014232144/test_merge_github_workflow/master
+  name: Merge
