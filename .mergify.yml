@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base!=20201014223924/test_refresh_repo/master
+  name: nothing
