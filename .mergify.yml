@@ -1,0 +1,23 @@
+pull_request_rules:
+- actions:
+    queue:
+      name: fast
+  conditions:
+  - base=20201029211824/test_merge_queue_with_check_failure/master
+  - label=fast
+  name: Merge fast
+- actions:
+    queue:
+      name: slow
+  conditions:
+  - base=20201029211824/test_merge_queue_with_check_failure/master
+  - label=slow
+  name: Merge slow
+queue_rules:
+- conditions:
+  - status-success=continuous-integration/fake-ci
+  name: fast
+- conditions:
+  - status-success=continuous-integration/fake-ci
+  - status-success=continuous-integration/long-ci
+  name: slow
