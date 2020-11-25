@@ -1,0 +1,8 @@
+pull_request_rules:
+- actions:
+    merge:
+      strict: smart+ordered
+  conditions:
+  - base=20201125150845/test_merge_depends_on/master
+  - label=automerge
+  name: Merge
