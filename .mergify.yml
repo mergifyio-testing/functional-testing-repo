@@ -1,0 +1,13 @@
+pull_request_rules:
+- actions:
+    label:
+      add_when_unmatch:
+      - ready
+      - foobar
+      remove_when_unmatch:
+      - testme
+      - what
+  conditions:
+  - base=20201126102346/test_label_add_remove_when_unmatch/master
+  - label=wip
+  name: unmatch label
