@@ -1,0 +1,8 @@
+pull_request_rules:
+- actions:
+    assign:
+      users:
+      - 1
+  conditions:
+  - base=20201201175013/test_assign_with_wrong_assignee/master
+  name: assign
