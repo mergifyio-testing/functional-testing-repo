@@ -1,0 +1,8 @@
+pull_request_rules:
+- actions:
+    comment:
+      bot_account: mergify-test3
+      message: WTF?
+  conditions:
+  - base=20210107105847/test_comment_with_oauth_token/master
+  name: comment
