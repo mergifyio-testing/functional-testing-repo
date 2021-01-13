@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    rebase: {}
+  conditions:
+  - base=20210113192825/test_rebase/master
+  name: rebase
