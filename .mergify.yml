@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base!=20210116171100/test_github_async_client/master
+  name: simulator
