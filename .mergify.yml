@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base!=20210116131511/test_change_mergify_yml/master
+  name: nothing
