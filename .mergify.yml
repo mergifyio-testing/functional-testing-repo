@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    label:
+      add: []
+      remove: []
+  conditions:
+  - base=20210116172749/test_label_empty/master
+  - label=stable
+  name: rename label
