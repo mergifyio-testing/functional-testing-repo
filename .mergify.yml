@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base!=20210119192908/test_refresh_branch/master
+  name: nothing
