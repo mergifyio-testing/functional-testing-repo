@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    rebase: {}
+  conditions:
+  - base=20210121140435/test_rebase_fail_heavy_repo/master
+  name: rebase
