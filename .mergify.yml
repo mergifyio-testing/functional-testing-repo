@@ -1,0 +1,13 @@
+pull_request_rules:
+- actions:
+    queue:
+      name: default
+      priority: high
+  conditions:
+  - base=20210125181132/test_queue_manual_merge/master
+  - label=queue
+  name: Merge priority high
+queue_rules:
+- conditions:
+  - status-success=continuous-integration/fake-ci
+  name: default
