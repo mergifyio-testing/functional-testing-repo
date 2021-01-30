@@ -4,3 +4,8 @@ pull_request_rules:
   conditions:
   - base!=20210130183521/test_change_mergify_yml/master
   name: nothing
+- actions:
+    merge: {}
+  conditions:
+  - label!=wip
+  name: foobar
