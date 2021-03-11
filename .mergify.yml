@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=20210311192416/test_merge_fail_branch_protection_ci/master
+  name: merge
