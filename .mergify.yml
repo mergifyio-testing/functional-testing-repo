@@ -1,0 +1,17 @@
+pull_request_rules:
+- actions:
+    merge:
+      method: rebase
+      rebase_fallback: null
+  conditions:
+  - base=20210311072857/test_backport_rebase_and_merge/master
+  - label=backport-#3.1
+  name: Merge on master
+- actions:
+    backport:
+      branches:
+      - 20210311072857/test_backport_rebase_and_merge/stable/#3.1
+  conditions:
+  - base=20210311072857/test_backport_rebase_and_merge/master
+  - label=backport-#3.1
+  name: Backport to stable/#3.1
