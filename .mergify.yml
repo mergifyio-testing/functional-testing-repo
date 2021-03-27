@@ -2,7 +2,7 @@ pull_request_rules:
 - actions:
     queue:
       name: default
-      priority: high
+      priority: low
   conditions:
   - base=20210324145404/test_pull_have_base_branch_merged_commit_with_changed_workflow/master
   - label=queue
