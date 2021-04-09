@@ -1,0 +1,18 @@
+pull_request_rules:
+- actions:
+    merge:
+      method: squash
+      rebase_fallback: null
+  conditions:
+  - base=20210409175937/test_backport_with_title/master
+  - label=backport-#3.1
+  name: Merge on master
+- actions:
+    backport:
+      brances:
+      - 20210409175937/test_backport_with_title/stable/#3.1
+      title: foo
+  conditions:
+  - base=20210409175937/test_backport_with_title/master
+  - label=backport-#3.1
+  name: Backport to stable/#3.1
