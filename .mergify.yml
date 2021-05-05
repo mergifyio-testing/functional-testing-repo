@@ -1,0 +1,14 @@
+pull_request_rules:
+- actions:
+    queue:
+      name: default
+      priority: high
+  conditions:
+  - base=20210505205249/test_pull_have_base_branch_merged_commit_with_changed_workflow/master
+  - label=queue
+  name: Merge priority high
+queue_rules:
+- conditions:
+  - status-success=continuous-integration/fake-ci
+  name: default
+  speculative_checks: 5
