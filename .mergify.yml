@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    merge:
+      strict: smart+ordered
+  conditions:
+  - base=20210511211614/test_merge_summary_lost/master
+  - label=automerge
+  - status-success=continuous-integration/fake-ci
+  name: Merge
