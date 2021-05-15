@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    close:
+      message: WTF?
+  conditions:
+  - base=20210515112335/test_close/master
+  name: close
