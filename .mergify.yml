@@ -1,0 +1,10 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: WTF?
+  conditions:
+  - base=20210527081156/test_debugger/master
+  - label=doubt
+  - number>0
+  - title~=pull request
+  name: comment
