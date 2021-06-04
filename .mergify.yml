@@ -1,0 +1,17 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: and or pr
+  conditions:
+  - or:
+    - and:
+      - '=':
+        - closed
+        - true
+      - '=':
+        - label
+        - foo
+    - '=':
+      - merged
+      - true
+  name: no-draft
