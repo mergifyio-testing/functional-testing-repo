@@ -1,0 +1,17 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: and or pr
+  conditions:
+  - or:
+    - and: !!python/tuple
+      - '=': !!python/tuple
+        - closed
+        - true
+      - '=': !!python/tuple
+        - label
+        - foo
+    - '=': !!python/tuple
+      - merged
+      - true
+  name: no-draft
