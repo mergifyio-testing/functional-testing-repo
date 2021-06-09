@@ -1,0 +1,16 @@
+pull_request_rules:
+- actions:
+    close: {}
+  conditions:
+  - base=20210609141253/test_disabled/master
+  - -closed
+  - label!=foo
+  disabled:
+    reason: code freeze
+  name: merge
+- actions: {}
+  conditions:
+  - base=20210609141253/test_disabled/master
+  - closed
+  - label=foo
+  name: nothing
