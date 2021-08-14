@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=20210814123116/test_merge_with_installation_token/master
+  name: merge on master
