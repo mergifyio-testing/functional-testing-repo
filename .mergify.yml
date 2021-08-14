@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    merge:
+      strict: true
+  conditions:
+  - base=20210814121228/test_merge_branch_protection_strict_ci/master
+  name: merge
