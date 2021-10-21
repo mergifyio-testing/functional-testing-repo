@@ -1,0 +1,6 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base!=20211021003433/test_refresh_api/main
+  name: nothing
