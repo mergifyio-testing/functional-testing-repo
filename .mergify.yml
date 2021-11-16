@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    merge:
+      method: rebase
+  conditions:
+  - base=20211116004127/test_rebase/main
+  - status-success=continuous-integration/fake-ci
+  - '#approved-reviews-by>=1'
+  name: Merge on main
